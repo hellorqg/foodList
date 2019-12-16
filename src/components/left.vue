@@ -1,19 +1,15 @@
 <template>
   <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
-      <li class="active">
-        <a href="#">
-          Overview
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li>
-        <a href="#">Reports</a>
-      </li>
-      <li>
-        <a href="#">Analytics</a>
-      </li>
-     
+      <router-link to="/foodlist" tag="li">
+        <a href="#">美食列表</a>
+      </router-link>
+      <router-link to="/city" tag="li">
+        <a href="#">城市列表</a>
+      </router-link>
+      <router-link to="/messages" tag="li">
+        <a href="#">评论列表</a>
+      </router-link>
     </ul>
   </div>
 </template>
