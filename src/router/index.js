@@ -6,6 +6,7 @@ import foodList from "../views/foodList.vue"
 import messages from "../components/messages.vue"
 import city from "../components/city.vue"
 import addFood from "../views/addFood.vue"
+import editFood from "../views/editFood.vue"
 Vue.use(VueRouter)
 export default new VueRouter({
     routes: [{
@@ -30,6 +31,10 @@ export default new VueRouter({
         {
             path: "/addFood",
             component: addFood
+        },
+        {
+            path: "/editFood/:foodid",
+            component: editFood
         }
     ]
 

@@ -7,9 +7,9 @@
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Header</th>
-            <th>Header</th>
+            <th>ID</th>
+            <th>美食</th>
+            <th>评价</th>
             <th>操作</th>
           </tr>
         </thead>
@@ -20,7 +20,7 @@
             <td>{{item.gender}}</td>
 
             <td>
-              <a href="edit.html">编辑</a> &nbsp;&nbsp;
+              <router-link :to="`/editFood/${item.id}`">编辑</router-link> &nbsp;&nbsp;
               <a href="#" @click.prevent="delFood(item.id)">删除</a>
             </td>
           </tr>
