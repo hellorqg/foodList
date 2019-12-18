@@ -9,6 +9,7 @@ import "../css/index.css" // 引入index.css
 import axios from "axios"
 // 设置axios的统一路径
 axios.defaults.baseURL = "http://localhost:3000"
+Vue.prototype.$axios = axios
 new Vue({
     router,
     render: h => h(App),

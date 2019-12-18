@@ -5,6 +5,7 @@ import VueRouter from "vue-router"
 import foodList from "../views/foodList.vue"
 import messages from "../components/messages.vue"
 import city from "../components/city.vue"
+import addFood from "../views/addFood.vue"
 Vue.use(VueRouter)
 export default new VueRouter({
     routes: [{
@@ -25,6 +26,10 @@ export default new VueRouter({
         {
             path: "/messages",
             component: messages
+        },
+        {
+            path: "/addFood",
+            component: addFood
         }
     ]
 
